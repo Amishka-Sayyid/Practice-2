@@ -16,3 +16,31 @@ window.onclick = function (event) {
     }
   }
 };
+
+//fetching image from api
+
+async function fetchImage() {
+  const response = await fetch("https://randomfox.ca/floof/");
+
+  const data = await response.json();
+
+  const wrangledData = data.image;
+  return wrangledData;
+}
+
+const aboutDiv = document.getElementById("fetch");
+function ImagePlace(imageurl) {
+  const newImage = document.createElement("img");
+  newImage.src = imageurl;
+  newImage.alt = "random images generated using api fetch";
+  newImage.className = "aboutImage";
+
+  aboutDiv.appendChild(newImage);
+}
+
+async function display() {
+  const displayImage = await fetchImage();
+
+  ImagePlace(displayImage);
+}
+display();

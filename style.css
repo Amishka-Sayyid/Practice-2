@@ -40,7 +40,7 @@
   display: block;
 }
 .dropContent a:hover {
-  background-color: #ddd;
+  background-color: rgb(255, 216, 196);
 }
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
@@ -90,4 +90,29 @@ header {
 }
 .headingContent button:hover {
   background-color: bisque;
+}
+/* about */
+#about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+#fetch .aboutImage {
+  height: 50vh;
+  width: 60vh;
+  border: 1px solid white;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+.aboutMe {
+  font-size: 1.5rem;
+  text-align: left;
+  height: 50vh;
+  width: 60vh;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(42, 38, 38);
 }
