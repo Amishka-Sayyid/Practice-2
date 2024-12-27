@@ -1,4 +1,5 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Quintessential&display=swap");
 
 * {
   margin: 0;
@@ -10,13 +11,14 @@
   padding: 1rem;
   margin: 1rem;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   border: none;
   cursor: pointer;
+  border-radius: 1.5rem;
 }
 .dropbtn:hover,
 .dropbtn:focus {
-  background-color: #2980b9;
+  background-color: bisque;
 }
 .menuDropdown {
   position: relative;
@@ -43,4 +45,49 @@
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
   display: block;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: linear-gradient(
+    180deg,
+    rgb(195, 114, 87),
+    rgb(232, 193, 163, 0)
+  );
+  height: 60vh;
+}
+.sociallink a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+.sociallink a:hover {
+  color: bisque;
+}
+.sociallink {
+  padding: 1rem;
+}
+.headingContent {
+  align-self: center;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Quintessential", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.headingContent button {
+  text-decoration: none;
+  color: black;
+  padding: 0.6rem;
+  font-size: 1.3rem;
+  font-family: "Quintessential", serif;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 1.7rem;
+  border: 1px solid white;
+}
+.headingContent button:hover {
+  background-color: bisque;
 }
