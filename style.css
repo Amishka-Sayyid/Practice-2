@@ -104,9 +104,9 @@ header {
 #fetch .aboutImage {
   height: 50vh;
   width: 60vh;
-  border: 1px solid white;
   border-radius: 2rem;
   object-fit: cover;
+  box-shadow: 10px 10px 10px bisque;
 }
 .aboutMe {
   font-size: 1.5rem;
