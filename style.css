@@ -116,3 +116,33 @@ header {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: rgb(42, 38, 38);
 }
+
+#projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-between;
+  padding: 2rem;
+  gap: 3rem;
+}
+.projectSection {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+}
+.projectSection img {
+  height: 40vh;
+  border-radius: 2rem;
+  object-fit: cover;
+  box-shadow: 10px 10px 10px bisque;
+}
+.content {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.content h3 {
+  font-family: "Quintessential", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4rem;
+}
