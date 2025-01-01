@@ -96,9 +96,20 @@ function handleSubmit(event) {
   event.preventDefault();
   // Create FormData from the form
   const formObject = new FormData(contactForm);
-  // Convert FormData to an object
-  const dataInput = Object.fromEntries(formObject);
-  console.log(dataInput);
-  // Display an alert
+
+  // const dataInput = Object.fromEntries(formObject);
+  // console.log(dataInput);
+
+  const username = formObject.get("username");
+  const email = formObject.get("email");
+  const message = formObject.get("message");
+
+  const dataInput = {
+    username,
+    email,
+    message,
+  };
+
+  localStorage.setItem("dataInput", JSON.stringify(dataInput));
   alert("data sent successfully");
 }
