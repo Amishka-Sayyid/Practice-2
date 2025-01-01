@@ -91,11 +91,14 @@ const contactForm = document.getElementById("contactForm");
 
 contactForm.addEventListener("submit", handleSubmit);
 
-function handlebutton(event) {
+function handleSubmit(event) {
+  // Prevent the default form submission behavior
   event.preventDefault();
-
+  // Create FormData from the form
   const formObject = new FormData(contactForm);
+  // Convert FormData to an object
   const dataInput = Object.fromEntries(formObject);
   console.log(dataInput);
+  // Display an alert
   alert("data sent successfully");
 }
