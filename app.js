@@ -47,6 +47,7 @@ display();
 
 //contact part
 
+//contactDetails
 const contactDetails = document.getElementById("contactDetails");
 
 function addContactDetails() {
@@ -71,8 +72,17 @@ function addContactDetails() {
   email.appendChild(emailIcon);
   email.appendChild(document.createTextNode(" project@gmail.com"));
 
+  const github = document.createElement("p");
+  const githubIcon = document.createElement("i");
+  githubIcon.classList.add("fa-brands", "fa-github");
+  github.appendChild(githubIcon);
+  github.appendChild(document.createTextNode(" github.com"));
+
   contactDetails.appendChild(address);
   contactDetails.appendChild(phone);
   contactDetails.appendChild(email);
+  contactDetails.appendChild(github);
 }
 addContactDetails();
+
+//contactForm

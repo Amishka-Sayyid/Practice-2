@@ -164,8 +164,8 @@ header {
   gap: 2rem;
 }
 #contactDetails {
-  height: 50vh;
-  width: 50vh;
+  height: 60vh;
+  width: 70vh;
   border-radius: 2rem;
   border: 1px solid beige;
   box-shadow: 10px 10px 10px bisque;
@@ -176,6 +176,9 @@ header {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+#contactDetails i {
+  color: rgb(195, 114, 87);
 }
 
 @media (max-width: 600px) {
@@ -287,5 +290,9 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
+  }
+  #contactDetails {
+    margin: auto;
+    width: 80%;
   }
 }
