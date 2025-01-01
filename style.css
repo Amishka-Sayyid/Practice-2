@@ -165,7 +165,7 @@ header {
 }
 #contactDetails {
   height: 60vh;
-  width: 70vh;
+  width: 80vh;
   border-radius: 2rem;
   border: 1px solid beige;
   box-shadow: 10px 10px 10px bisque;
@@ -179,6 +179,53 @@ header {
 }
 #contactDetails i {
   color: rgb(195, 114, 87);
+}
+#contactFormPart {
+  height: 60vh;
+  width: 80vh;
+  border-radius: 2rem;
+  border: 1px solid beige;
+  box-shadow: 10px 10px 10px bisque;
+  font-family: "Quintessential", serif;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+#contactFormPart h1 {
+  text-decoration: underline;
+  font-weight: bold;
+  color: rgb(195, 114, 87);
+}
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+#contactForm input {
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  height: 3rem;
+  padding: 1rem;
+  border: 1px solid rgb(124, 93, 83);
+}
+#contactForm textarea {
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  height: 6rem;
+  padding: 1rem;
+  border: 1px solid rgb(124, 93, 83);
+}
+#contactForm button {
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  height: 3rem;
+
+  border: 1px solid rgb(124, 93, 83);
+  color: rgb(124, 93, 83);
 }
 
 @media (max-width: 600px) {
@@ -294,5 +341,10 @@ header {
   #contactDetails {
     margin: auto;
     width: 80%;
+  }
+  #contactFormPart {
+    margin: auto;
+    width: 80%;
+    height: 80vh;
   }
 }

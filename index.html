@@ -96,8 +96,31 @@
       </section>
       <div id="contact">
         <div id="contactDetails"></div>
-        <div>
-          <form id="contactForm"></form>
+        <div id="contactFormPart">
+          <h1>Get In Touch</h1>
+          <form id="contactForm">
+            <input
+              type="username"
+              name="username"
+              id="username"
+              placeholder="Type your name here"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Type your email here"
+              required
+            />
+
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Type your message here"
+              required
+            ></textarea>
+            <button type="submit">Submit Data</button>
+          </form>
         </div>
       </div>
     </main>
