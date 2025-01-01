@@ -44,3 +44,22 @@ async function display() {
   ImagePlace(displayImage);
 }
 display();
+
+//contact part
+
+const contactDetails = document.getElementById("contactDetails");
+
+function addContactDetails() {
+  const address = document.createElement("p");
+
+  address.textContent = "20 christow street, le2 1gl";
+  const phone = document.createElement("p");
+  phone.textContent = "+44 7234567891";
+  const email = document.createElement("p");
+  email.textContent = "project@gmail.com";
+
+  contactDetails.appendChild(address);
+  contactDetails.appendChild(phone);
+  contactDetails.appendChild(email);
+}
+addContactDetails();
