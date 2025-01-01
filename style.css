@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .dropbtn {
@@ -145,13 +146,13 @@ header {
 }
 .content {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 .content h3 {
   font-family: "Quintessential", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 /* contact part */
 #contact {
@@ -223,9 +224,38 @@ header {
   font-size: 1.2rem;
   border-radius: 0.5rem;
   height: 3rem;
-
   border: 1px solid rgb(124, 93, 83);
+  background-color: rgb(228, 189, 176);
+}
+
+/* gotopbtn */
+.gotopbtn {
+  font-size: 1.3rem;
   color: rgb(124, 93, 83);
+  border: 1px solid rgb(124, 93, 83);
+  padding: 1rem;
+  border-radius: 4rem;
+  margin: auto;
+  position: fixed;
+  right: 5px;
+  bottom: 2rem;
+  z-index: 2;
+  text-align: center;
+}
+
+/* footer */
+footer {
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 1rem;
+  margin: auto;
+  color: white;
+  background-color: rgb(228, 189, 176);
+}
+footer a {
+  color: white;
+  height: 60px;
+  text-decoration: none;
 }
 
 @media (max-width: 600px) {
