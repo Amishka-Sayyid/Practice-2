@@ -51,12 +51,25 @@ const contactDetails = document.getElementById("contactDetails");
 
 function addContactDetails() {
   const address = document.createElement("p");
+  const addressIcon = document.createElement("i");
+  addressIcon.classList.add("fa-solid", "fa-location-dot");
+  address.appendChild(addressIcon);
+  address.appendChild(document.createTextNode(" 20 christow street, le2 1gl"));
+  // address.textContent = "20 christow street, le2 1gl";
+  // this overwrites the entire content hence is best to use document.createTextNode() to append the text content after the icon has been added
+  //This ensures that both the icon and the text appear correctly in each <p> element.
 
-  address.textContent = "20 christow street, le2 1gl";
   const phone = document.createElement("p");
-  phone.textContent = "+44 7234567891";
+  const phoneIcon = document.createElement("i");
+  phoneIcon.classList.add("fa", "fa-phone");
+  phone.appendChild(phoneIcon);
+  phone.appendChild(document.createTextNode(" +44 7234567891"));
+
   const email = document.createElement("p");
-  email.textContent = "project@gmail.com";
+  const emailIcon = document.createElement("i");
+  emailIcon.classList.add("fa", "fa-envelope");
+  email.appendChild(emailIcon);
+  email.appendChild(document.createTextNode(" project@gmail.com"));
 
   contactDetails.appendChild(address);
   contactDetails.appendChild(phone);
