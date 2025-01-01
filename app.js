@@ -86,3 +86,16 @@ function addContactDetails() {
 addContactDetails();
 
 //contactForm
+//saving the form details to local storage
+const contactForm = document.getElementById("contactForm");
+
+contactForm.addEventListener("submit", handleSubmit);
+
+function handlebutton(event) {
+  event.preventDefault();
+
+  const formObject = new FormData(contactForm);
+  const dataInput = Object.fromEntries(formObject);
+  console.log(dataInput);
+  alert("data sent successfully");
+}

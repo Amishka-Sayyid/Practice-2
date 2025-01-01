@@ -164,7 +164,7 @@ header {
   gap: 2rem;
 }
 #contactDetails {
-  height: 60vh;
+  height: 70vh;
   width: 80vh;
   border-radius: 2rem;
   border: 1px solid beige;
@@ -181,7 +181,7 @@ header {
   color: rgb(195, 114, 87);
 }
 #contactFormPart {
-  height: 60vh;
+  height: 70vh;
   width: 80vh;
   border-radius: 2rem;
   border: 1px solid beige;
