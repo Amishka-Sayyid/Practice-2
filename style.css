@@ -163,18 +163,19 @@ header {
   padding: 1rem;
   gap: 2rem;
 }
-#contactDetails #contactForm {
-  height: 60vh;
-  width: 70vh;
-  gap: 2rem;
+#contactDetails {
+  height: 50vh;
+  width: 50vh;
   border-radius: 2rem;
   border: 1px solid beige;
   box-shadow: 10px 10px 10px bisque;
-  align-items: center;
   font-family: "Quintessential", serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 @media (max-width: 600px) {
